@@ -1,7 +1,8 @@
 package decorator.starbuzz;
 
 public class Decaf extends Beverage {
-	public Decaf() {
+	public Decaf(Size size) {
+		this.size = size;
 		description = "Decaf Coffee";
 	}
  

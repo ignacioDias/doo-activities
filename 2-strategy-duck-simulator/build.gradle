@@ -8,7 +8,6 @@
 
 plugins {
 	id 'java'
-	//id 'eclipse' // optional (to generate Eclipse project files)
 	id 'idea' // optional (to generate IntelliJ IDEA project files)
 }
 
@@ -21,7 +20,6 @@ dependencies {
 	testImplementation('org.junit.jupiter:junit-jupiter')
 	testRuntimeOnly('org.junit.platform:junit-platform-launcher')
 	testImplementation("org.assertj:assertj-core:3.25.1")
-	testImplementation(files("libs/easymock-5.2.0.jar"))
 }
 
 test {

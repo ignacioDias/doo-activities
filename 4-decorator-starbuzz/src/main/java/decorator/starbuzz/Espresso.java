@@ -2,7 +2,8 @@ package decorator.starbuzz;
 
 public class Espresso extends Beverage {
   
-	public Espresso() {
+	public Espresso(Size size) {
+		this.size = size;
 		description = "Espresso";
 	}
   

@@ -1,7 +1,8 @@
 package decorator.starbuzz;
 
 public class HouseBlend extends Beverage {
-	public HouseBlend() {
+	public HouseBlend(Size size) {
+		this.size = size;
 		description = "House Blend Coffee";
 	}
  

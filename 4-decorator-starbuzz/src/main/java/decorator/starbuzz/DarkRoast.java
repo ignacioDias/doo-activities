@@ -1,7 +1,8 @@
 package decorator.starbuzz;
 
 public class DarkRoast extends Beverage {
-	public DarkRoast() {
+	public DarkRoast(Size size) {
+		this.size = size;
 		description = "Dark Roast Coffee";
 	}
  

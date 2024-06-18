@@ -7,7 +7,7 @@ public class InputTest {
 		int c;
 		InputStream in = null;
 		try {
-			in = new LowerCaseInputStream(
+			in = new CodifyCesar(
 					new BufferedInputStream(
 						new FileInputStream("test.txt")));
 

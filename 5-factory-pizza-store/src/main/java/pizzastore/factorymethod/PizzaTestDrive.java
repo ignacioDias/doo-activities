@@ -29,5 +29,16 @@ public class PizzaTestDrive {
  
 		pizza = chicagoStore.orderPizza("veggie");
 		System.out.println("Joel ordered a " + pizza.getName() + "\n");
+
+		PizzaStore argStore = new ArgPizzaStore();
+		pizza = argStore.orderPizza("cheese");
+		System.out.println("Raúl ordered a " + pizza.getName() + "\n");
+
+		pizza = argStore.orderPizza("tropical");
+		System.out.println("Raúl ordered a " + pizza.getName() + "\n");
+
+		pizza = argStore.orderPizza("ham");
+		System.out.println("Raúl ordered a " + pizza.getName() + "\n");
+
 	}
 }

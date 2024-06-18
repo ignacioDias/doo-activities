@@ -3,6 +3,7 @@ package decorator.starbuzz;
 public class Mocha extends CondimentDecorator {
 	public Mocha(Beverage beverage) {
 		this.beverage = beverage;
+		this.size = beverage.getSize();
 	}
  
 	public String getDescription() {
@@ -10,6 +11,11 @@ public class Mocha extends CondimentDecorator {
 	}
  
 	public double cost() {
-		return .20 + beverage.cost();
+		double cost = beverage.cost();
+		if(size == Size.Large)
+			return cost + 0.30;
+		if(size == Size.Small)
+			return cost + 0.20;
+		return .20 + cost;
 	}
 }
